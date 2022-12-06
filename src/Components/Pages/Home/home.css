@@ -1,0 +1,21 @@
+.headerContainer {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid rgb(129, 192, 35); */
+  /* padding: 10px; */
+  text-align: center;
+}
+
+.title{
+    color:  rgb(129, 192, 35);
+    background-color: rgba(58, 2, 2, 0.7);
+    margin: auto;
+    margin-top: 25px;
+    width: 45%;
+    border-radius: 15px 5px;
+}
+
+.subTitle {
+    color:rgba(255, 255, 255, 0.938);
+    float: right;
+}

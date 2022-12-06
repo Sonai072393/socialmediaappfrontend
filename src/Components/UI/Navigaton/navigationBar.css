@@ -1,0 +1,54 @@
+.navBright {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(10, 128, 206) ;
+    cursor: pointer;    
+    caret-color: transparent
+  }
+
+  .navDark {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(24, 23, 23);
+    cursor: pointer; 
+    caret-color: transparent
+  }
+
+  .bodyDark{
+    background-color: #333;
+
+  }
+
+  .bodyBright{
+    background-color: rgb(245, 239, 239);
+  }
+  
+  Link {
+    text-decoration: none;
+  }
+  
+  li {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    height: 25px;
+  }
+  
+  li:hover {
+    background-color: #111;
+  }
+  
+  .signIn{
+    float: right;
+    background-color: rgb(129, 192, 35);
+  }
+  
+  .modeBtnBrit {
+    float: right;
+  }

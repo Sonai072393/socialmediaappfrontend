@@ -1,0 +1,52 @@
+input[type=file] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    /* border: 3px solid #ccc; */
+    box-sizing: border-box;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+  }
+
+input:focus{
+    border-color: rgb(129, 192, 35) ;
+    }
+    /* Set a style for all buttons */
+    /* button {
+      background-color:  rgb(129, 192, 35);
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0px 0px 5px;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    } */
+    
+    .container {
+      padding: 16px;
+      color: rgba(255, 166, 0, 0.856);
+    }
+    
+    .btnContainer {
+      padding: 16px;
+      display: flex;
+    }
+    .cancelbtn{
+      background:  rgb(192, 53, 35);
+    }
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }

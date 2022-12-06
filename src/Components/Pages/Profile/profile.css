@@ -1,0 +1,88 @@
+
+/* profile image */
+.roundedCircleImage{
+  margin: 50px;
+  margin-bottom:10px ;
+  border-radius: 45px;
+}
+
+.settings{
+  text-align: center;
+  color: rgb(129, 192, 35);
+}
+.row {
+  display: flex;
+}
+
+.editRow {
+  display: flex;
+}
+
+.column1 {
+  margin: 25px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.column2{
+  margin: inherit;
+  padding: inherit;
+}
+
+.nameRow{
+  margin: 10px;
+  display: flex;
+}
+
+.nameDiv{
+  width: 100%;
+  margin: 5px;
+}
+.fullName{
+  border-radius: 10px;
+}
+
+.name{
+  border-radius: 10px;
+}
+
+.infoRow{
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infoDiv{
+  width: 50%;
+}
+.infoDivCode{
+  width: 20%;
+  margin-right: 20px;
+  margin-left: 5px;
+
+}
+.info{
+  border-radius: 10px;
+}
+
+.infoCode{
+  border-radius: 10px;
+}
+
+.infoDivNumber{
+  width: 70%;
+}
+
+.infoNumber{
+  border-radius: 10px;
+}
+
+.infoDivAddress{
+  width: 100%;
+  padding: 5px;
+}
+
