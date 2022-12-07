@@ -16,6 +16,7 @@ import SignUp from "../Pages/SignUp/SignUp";
 import Migration from "../Pages/Migrations/Migration";
 import SubNavBar from "../UI/DashboardNavigation/SubNavBar";
 import Profile from "../Pages/Profile/Profile";
+import People from "../Pages/People/People";
 
 export const RoutesPaths = createBrowserRouter([
   {
@@ -54,9 +55,9 @@ export const RoutesPaths = createBrowserRouter([
         element: <Profile/>,
       },
       {
-        name: "Dashboard",
-        path: "/dashboard/signIn3",
-        element: "",
+        name: "People",
+        path: "/dashboard/people",
+        element: <People/>,
       },
     ]
   }

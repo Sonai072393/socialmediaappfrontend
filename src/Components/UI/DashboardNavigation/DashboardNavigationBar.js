@@ -29,7 +29,18 @@ const DashboardNavigationBar = () => {
               <li className="dasLiNav">Dashboard</li>
             </div>
           </Link>
-
+          <Link to="/dashboard/people" className="dasLinkNav">
+            <div className="dasLiNav">
+              <DashboardIcon className="dasLiNav"/>
+              <li className="dasLiNav">People</li>
+            </div>
+          </Link>
+          <Link to="/dashboard/people" className="dasLinkNav">
+            <div className="dasLiNav">
+              <DashboardIcon className="dasLiNav"/>
+              <li className="dasLiNav">People</li>
+            </div>
+          </Link>
           {/* <Link to="/dashboard" className="dasLiNav">
             <DashboardIcon className="dasLiNav" />
             <li className="dasLiNav">Friends</li>
