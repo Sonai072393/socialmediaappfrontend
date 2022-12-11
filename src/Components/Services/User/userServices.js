@@ -14,7 +14,6 @@ export const fetchUsers = async (loginDetails, onSuccess, onFailure) => {
     );
   }
 };
-
 export const fetchUsersProfile = async (userId, onSuccess, onFailure) => {
   try {
     const res = await axios.post(`${webApi}/posts/getProfile`, {
@@ -31,7 +30,21 @@ export const fetchUsersProfile = async (userId, onSuccess, onFailure) => {
     onFailure("Something Wrong! Please Try again later " + error);
   }
 };
-
+export const fetchAllUsers = async (userId, onSuccess, onFailure) => {
+  try {
+    const response = await axios.post(`${webApi}/posts/getUser/list`, {
+      userId: userId,
+    });
+    if (response.status === 201) {
+      const r = response.data;
+      onSuccess(r);
+    } else {
+      onFailure("Something Wrong! Please Try again later ");
+    }
+  } catch (error) {
+    onFailure("Something Wrong! Please Try again later " + error);
+  }
+};
 export const updateUsersProfile = async (
   profileDetail,
   onSuccess,
@@ -70,7 +83,6 @@ export const signUpUser = async (signUpDetails, onSuccess, onFailure) => {
     }
   } catch (error) {
     onFailure("Something Wrong! Please Try again later " + error);
-
   }
 };
 
@@ -80,7 +92,7 @@ export const emailCheck = async (email, onSuccess, onFailure) => {
       email: email,
     });
 
-    console.log(response)
+    console.log(response);
 
     if (response.status === 201) {
       const r = response.data;
@@ -90,6 +102,22 @@ export const emailCheck = async (email, onSuccess, onFailure) => {
     }
   } catch (error) {
     onFailure("Something Wrong! Please Try again later " + error);
-
   }
 };
+
+export const addFriends = async(id,add, onSuccess ,onFailure)=>{
+  try {
+    const response = await axios.post(`${webApi}/posts/friendList/update`,{
+      userId:id,
+      friendId:add.user_id,
+      friendName:add.name
+    })
+    if(response.status ===201)
+    {
+      onSuccess(response.data)
+    }
+  } catch (error) {
+    onFailure("Something Wrong! Please Try again later " + error);
+    
+  }
+}

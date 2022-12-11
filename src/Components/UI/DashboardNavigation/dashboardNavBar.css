@@ -3,13 +3,15 @@
   margin: 0;
   padding: 0;
   width: 20%;
-  background-color: rgba(58, 2, 2, 0.5);
+  background-color: rgba(255, 158, 13, 0.5);
   position: fixed;
   height: 100%;
   overflow: auto;
   display: flex;
   flex-direction: column;
   caret-color: transparent;
+  color: rgb(255, 158, 13);
+
 }
 .details {
   margin-left: 25%;
@@ -22,7 +24,7 @@
   width: 80%;
   margin-top: 60px;
   padding: 30px;
-  color: white;
+  color: rgb(255, 158, 13);
   overflow: visible;
   height: 500px;
 }
@@ -30,7 +32,9 @@
 .dasLinkNav {
   display: flex;
   float: left;
-  color: rgb(255, 249, 249);
+  /* color: rgb(255, 249, 249); */
+  color: rgb(255, 158, 13);
+
   padding: 4px 16px;
   text-decoration: none;
   width: 80%;
@@ -42,7 +46,7 @@
 .dasLiNav {
   display: flex;
   float: left;
-  color: rgb(255, 249, 249);
+  /* color: rgb(255, 249, 249); */
   padding: 4px 16px;
   text-decoration: none;
   width: 80%;

@@ -1,0 +1,20 @@
+.listContainer{
+    padding: 10px;
+}
+
+.peopleList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0px 70px 0px 70px; */
+}
+
+.imgNameDiv{
+    text-align: left;
+}
+.roundedCircleImagePeople{
+  border-radius: 25px;
+  width: 75px;
+  border: solid;
+  border-color: rgb(129, 192, 35);
+}

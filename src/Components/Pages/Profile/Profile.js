@@ -120,11 +120,11 @@ const Profile = () => {
                       onChange={onChangeHandler}
                       value={profileDetail.name}
                       disabled={edit ? false : true}
-                      style={
-                        edit
-                          ? { color: "black" }
-                          : { color: "white", caretColor: "transparent" }
-                      }
+                      // style={
+                      //   edit
+                      //     ? { color: "black" }
+                      //     : { color: "orange", caretColor: "transparent" }
+                      // }
                     />
                   </div>
                 </div>
@@ -137,7 +137,7 @@ const Profile = () => {
                       placeholder="+91"
                       value="+91"
                       disabled
-                      style={{ color: "white", caretColor: "transparent" }}
+                      // style={{ caretColor: "transparent" }}
                     />
                   </div>
                   <div className="infoDivNumber">
@@ -150,11 +150,11 @@ const Profile = () => {
                       onChange={onChangeHandler}
                       value={profileDetail.mobile}
                       disabled={edit ? false : true}
-                      style={
-                        edit
-                          ? { color: "black" }
-                          : { color: "white", caretColor: "transparent" }
-                      }
+                      // style={
+                      //   edit
+                      //     ? { color: "black" }
+                      //     : { color: "white", caretColor: "transparent" }
+                      // }
                     />
                   </div>
                   <div className="infoDivAddress">
@@ -166,11 +166,11 @@ const Profile = () => {
                       onChange={onChangeHandler}
                       value={profileDetail.address}
                       disabled={edit ? false : true}
-                      style={
-                        edit
-                          ? { color: "black" }
-                          : { color: "white", caretColor: "transparent" }
-                      }
+                      // style={
+                      //   edit
+                      //     ? { color: "black" }
+                      //     : { color: "white", caretColor: "transparent" }
+                      // }
                     />
                   </div>
                   <div className="infoDivAddress">
@@ -183,11 +183,11 @@ const Profile = () => {
                       onChange={onChangeHandler}
                       value={profileDetail.email}
                       disabled={edit ? false : true}
-                      style={
-                        edit
-                          ? { color: "black" }
-                          : { color: "white", caretColor: "transparent" }
-                      }
+                      // style={
+                      //   edit
+                      //     ? { color: "black" }
+                      //     : { color: "white", caretColor: "transparent" }
+                      // }
                     />
                   </div>
                 </div>
@@ -202,11 +202,11 @@ const Profile = () => {
                       onChange={onChangeHandler}
                       value={profileDetail.country}
                       disabled={edit ? false : true}
-                      style={
-                        edit
-                          ? { color: "black" }
-                          : { color: "white", caretColor: "transparent" }
-                      }
+                      // style={
+                      //   edit
+                      //     ? { color: "black" }
+                      //     : { color: "white", caretColor: "transparent" }
+                      // }
                     />
                   </div>
                   <div className="nameDiv">
@@ -219,11 +219,11 @@ const Profile = () => {
                       onChange={onChangeHandler}
                       value={profileDetail.state}
                       disabled={edit ? false : true}
-                      style={
-                        edit
-                          ? { color: "black" }
-                          : { color: "white", caretColor: "transparent" }
-                      }
+                      // style={
+                      //   edit
+                      //     ? { color: "black" }
+                      //     : { color: "white", caretColor: "transparent" }
+                      // }
                     />
                   </div>
                 </div>
