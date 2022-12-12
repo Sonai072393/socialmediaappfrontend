@@ -33,7 +33,7 @@ export const fetchUsersProfile = async (userId, onSuccess, onFailure) => {
 export const fetchAllUsers = async (userId, onSuccess, onFailure) => {
   try {
     const response = await axios.post(`${webApi}/posts/getUser/list`, {
-      userId: userId,
+      userId: Number(userId),
     });
     if (response.status === 201) {
       const r = response.data;

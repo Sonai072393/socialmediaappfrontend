@@ -34,7 +34,20 @@ border-color: rgb(129, 192, 35) ;
 }
 
 button:hover {
-  opacity: 0.8;
+  /* opacity: 0.8; */
+  /* background:  rgb(172, 41, 23); */
+
+}
+
+.submitbtn:hover {
+  /* opacity: 0.8; */
+  background:   rgb(117, 173, 32);
+}
+
+.cancelbtn:hover {
+  /* opacity: 0.8; */
+  background:  rgb(172, 41, 23);
+
 }
 
 .container {

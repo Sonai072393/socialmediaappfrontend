@@ -35,10 +35,10 @@ const DashboardNavigationBar = () => {
               <li className="dasLiNav">People</li>
             </div>
           </Link>
-          <Link to="/dashboard/people" className="dasLinkNav">
+          <Link to="/dashboard/friends" className="dasLinkNav">
             <div className="dasLiNav">
               <DashboardIcon className="dasLiNav"/>
-              <li className="dasLiNav">People</li>
+              <li className="dasLiNav">Friends</li>
             </div>
           </Link>
           {/* <Link to="/dashboard" className="dasLiNav">

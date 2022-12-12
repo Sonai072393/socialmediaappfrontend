@@ -13,7 +13,7 @@ import Card from "../../UI/Card/Card";
 import PersonAddAlt1OutlinedIcon from "@mui/icons-material/PersonAddAlt1Outlined";
 
 //css
-import "./people.css";
+// import "./people.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 //redux
@@ -23,14 +23,12 @@ import {
   selectMsgType,
 } from "../../Redux/Features/Alert/alertSlice";
 
-const People = () => {
+const Friends = () => {
   //redux
   const dispatch = useDispatch();
   const messagesType = useSelector(selectMsgType);
 
   const [peopleDetail, setPeopleDetail] = useState([]);
-  const [add, setAdd] = useState(false);
-  const [edit, setEdit] = useState(false);
 
   useEffect(() => {
     fetchAllUsers(
@@ -38,7 +36,7 @@ const People = () => {
       (res) => {
         console.log(res.userList);
         setPeopleDetail(res.userList);
-        setAdd(false)
+        // setAdd(false)
       },
       (error) => {
         dispatch(
@@ -49,40 +47,40 @@ const People = () => {
         );
       }
     );
-  }, [add]);
+  }, []);
 
-  const onAddFriend = (event) => {
-    console.log(event);
-    addFriends(
-      localStorage.userId,
-      event,
-      (res) => {
-        console.log(res);
-        setAdd(true);
+//   const onAddFriend = (event) => {
+//     console.log(event);
+//     addFriends(
+//       localStorage.userId,
+//       event,
+//       (res) => {
+//         console.log(res);
+//         setAdd(true);
 
-        dispatch(
-          Alert_Message({
-            msgType: messagesType.successMsg,
-            msg: "Added",
-          })
-        );
-      },
-      (error) => {
-        dispatch(
-          Alert_Message({
-            msgType: messagesType.errorMsg,
-            msg: error,
-          })
-        );
-      }
-    );
-  };
+//         dispatch(
+//           Alert_Message({
+//             msgType: messagesType.successMsg,
+//             msg: "Added",
+//           })
+//         );
+//       },
+//       (error) => {
+//         dispatch(
+//           Alert_Message({
+//             msgType: messagesType.errorMsg,
+//             msg: error,
+//           })
+//         );
+//       }
+//     );
+//   };
   return (
     <>
       <div className="peopleContainer">
         <Card
-          cardTitle="People List"
-          subTitle="user presents..."
+          cardTitle="Friends List"
+          subTitle="Yours Buddys..."
           style={{ width: "50%" }}
         >
           {peopleDetail.map((r, i) => (
@@ -94,13 +92,14 @@ const People = () => {
                     width="150px"
                     src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
                   />
-                  <div>{r.name}</div>
                 </div>
-                <div>
+                <div>{r.name}</div>
+
+                {/* <div>
                   <button onClick={() => onAddFriend(r)} disabled={r.status}>
                     <PersonAddAlt1OutlinedIcon />
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
@@ -110,4 +109,4 @@ const People = () => {
   );
 };
 
-export default People;
+export default Friends;
